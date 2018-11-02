@@ -40,7 +40,6 @@ weight_path1 = './best_w_[0928-Kfold+shuffle+0928best_w_bias-ver7].csv'
 weight_path2 = './best_w_[0930-mean[[0928-Kfold+shuffle+0928best_w_bias-ver7]+[0930-Kfold+shuffle+new_feature2-ver10]]-ver11].csv'
 w1 = pd.read_csv(weight_path1, encoding='big5').values
 w2 = pd.read_csv(weight_path2, encoding='big5').values
-
 best_w = np.zeros(162)
 best_bias = 0
 for i in range(0,162):
